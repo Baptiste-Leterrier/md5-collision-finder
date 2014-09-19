@@ -13,4 +13,6 @@ As explained in the code, it will prompt a message every 100000 tests so don't p
 
 - It also have a cool feature to limit the use of RAM. You can't set a limit to not destroy your system and be able to leave your computer during processing.
 
+- Only tested on Linux Ubuntu 11.04
+
 Licence GPL GNU
