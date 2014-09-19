@@ -10,6 +10,7 @@ python MD5Collisions.py
 usage: HashColl.py [-h] -s STRINGL -t HASHL -r MAXRAM -c MAXCOLL
 
 MD5 - Collision Finder
+----------------------
 
 optional arguments:
 
