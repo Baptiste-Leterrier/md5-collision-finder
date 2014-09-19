@@ -5,7 +5,7 @@ A Python code that find collisions in MD5 hashes. It can be fully customized to 
 
 Juste run the command:
 
-python MD5Coll.py
+python MD5Collisions.py
 
 As explained in the code, it will prompt a message every 100000 tests so don't panic.
 
