@@ -12,13 +12,18 @@ usage: HashColl.py [-h] -s STRINGL -t HASHL -r MAXRAM -c MAXCOLL
 MD5 - Collision Finder
 
 optional arguments:
+
   -h, --help            show this help message and exit
+  
   -s STRINGL, --stringL 
                         String Length to Hash
+                        
   -t HASHL, --hashL 
                         Hash length to test
+                        
   -r MAXRAM, --maxRam 
                         Max RAM to use for this program
+                        
   -c MAXCOLL, --maxColl 
                         Number of collision to find before stopping
 
