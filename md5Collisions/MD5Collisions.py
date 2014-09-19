@@ -4,19 +4,34 @@ import random
 import time
 import psutil
 import os
+import sys
+import argparse
+__author__ = 'Shepah'
 
 start = time.time()
 
 stringLength = 17
-hashLength = 11
+hashLength = 8
 maxRam = 89
 maxCollisionNum = 3
+
+parser = argparse.ArgumentParser(description='MD5 - Collision Finder')
+parser.add_argument('-s','--stringL', help='String Length to Hash',required=True)
+parser.add_argument('-t','--hashL',help='Hash length to test', required=True)
+parser.add_argument('-r','--maxRam', help='Max RAM to use for this program',required=True)
+parser.add_argument('-c','--maxColl',help='Number of collision to find before stopping', required=True)
+args = parser.parse_args()
+
+stringLength = int(args.stringL)
+hashLength = int(args.hashL)
+maxRam = int(args.maxRam)
+maxCollisionNum = int(args.maxColl)
 
 def showInfo():
 	print "/////////"
 	print "MD5 collision finder"
 	print "created by Shepah"
-	print "Licence: GPL GNU"
+	print "Licence: GPL GNU (i don't give a shit)"
 	print "///////// \n"
 
 	print "Parameters: \n -Length of string used for random generation: "+ str(stringLength) + " \n -Length of hash analyzed for collision: "+ str(hashLength) + " \n -Max RAM used before auto stop: "+ str(maxRam) +"% \n -The program will find "+ str(maxCollisionNum)+ " collisions before stopping \n -The program will prompt a message every 100000 tests \n \n"
