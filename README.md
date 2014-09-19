@@ -9,6 +9,8 @@ python MD5Collisions.py
 
 As explained in the code, it will prompt a message every 100000 tests so don't panic.
 
-In the end, it will prompt the list of string which generate similar hashes. Keep in mind that they are only similar for a portion of the hash (except if you have generate a full length hash)
+- In the end, it will prompt the list of string which generate similar hashes. Keep in mind that they are only similar for a portion of the hash (except if you have generate a full length hash)
+
+- It also have a cool feature to limit the use of RAM. You can't set a limit to not destroy your system and be able to leave your computer during processing.
 
 Licence GPL GNU
